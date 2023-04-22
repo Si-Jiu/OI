@@ -1,0 +1,10 @@
+{
+  "clangd.arguments": [
+    "--clang-tidy",
+    "--all-scopes-completion",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--pch-storage=memory",
+    "--background-index"
+  ]
+}
