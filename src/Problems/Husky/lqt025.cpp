@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define short long long // IO千万题，longlong第一题，类型不规范，RE两行泪
+#define short long long // OI千万题，longlong第一题，类型不规范，RE两行泪
 #define float double
 
 using namespace std;
@@ -15,7 +15,7 @@ int main()
     {
         cin >> tmp;
         for (short j = 1; j <= m; j++)
-            maze[i][j] = tmp[j-1] == '.' ? true : false;
+            maze[i][j] = tmp[j - 1] == '.' ? true : false;
     }
     cin >> commands;
     for (auto cmd : commands)
