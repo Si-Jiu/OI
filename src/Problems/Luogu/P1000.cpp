@@ -1,10 +1,4 @@
-/**
- * @file P1000.cpp
- * @author SiJiu49 (si_jiu49@outlook.com)
- * @brief
- * @date 2023-01-20
- */
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 

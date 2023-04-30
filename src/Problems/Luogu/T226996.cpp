@@ -1,16 +1,4 @@
-/**
- * @file T226996.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-02-18
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cmath>
-#include <cstdio>
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 

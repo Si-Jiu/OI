@@ -1,7 +1,9 @@
 #include <iostream>
 
 using namespace std;
+
 int num[1000];
+
 int main()
 {
     int n;
@@ -15,5 +17,6 @@ int main()
                 if (num[i] + num[j] > num[k] && num[i] + num[k] > num[j] && num[j] + num[k] > num[i])
                     ans++;
     cout << ans;
+
     return 0;
 }

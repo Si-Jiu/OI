@@ -1,16 +1,4 @@
-/**
- * @file P1223.cpp
- * @author your name (you@domain.com)
- * @brief
- * @version 0.1
- * @date 2023-02-24
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <algorithm>
-#include <cstdio>
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -19,10 +7,12 @@ struct people
     int time;
     short num;
 };
+
 bool comp(const people &a, const people &b)
 {
     return a.time < b.time;
 }
+
 int main()
 {
     short n;

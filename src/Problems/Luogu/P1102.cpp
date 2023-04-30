@@ -1,14 +1,5 @@
-/**
- * @file P1102.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-02-25
- *
- * @copyright Copyright (c) 2023
- *
- */
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main()
@@ -22,5 +13,6 @@ int main()
     for (int i = 0; i < n; i++)
         ans += ((upper_bound(a, a + n, a[i] + c) - a) - (lower_bound(a, a + n, a[i] + c) - a));
     cout << ans;
+
     return 0;
 }

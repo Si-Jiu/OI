@@ -1,12 +1,9 @@
 #include <bits/stdc++.h>
-#define short long long // OI千万题，longlong第一题，类型不规范，RE两行泪
-#define llong long long
-#define float double
 
 using namespace std;
 
-queue<llong> que;
-llong n, op;
+queue<long long> que;
+long long n, op;
 
 int main()
 {
@@ -20,19 +17,15 @@ int main()
             que.push(op);
         }
         else if (op == 2)
-        {
             if (que.empty())
                 cout << "ERR_CANNOT_POP" << endl;
             else
                 que.pop();
-        }
         else if (op == 3)
-        {
             if (que.empty())
                 cout << "ERR_CANNOT_QUERY" << endl;
             else
                 cout << que.front() << endl;
-        }
         else
             cout << que.size() << endl;
     }

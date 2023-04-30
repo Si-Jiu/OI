@@ -1,15 +1,7 @@
-/**
- * @file P5726.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @date 2023-01-27
- *
- * 不会有什么注释的, 做好心理准备 :)
- *
- */
-#include <cstdio>
+#include <bits/stdc++.h>
 
 using namespace std;
+
 short n;
 
 short array_max_min(short *array, bool chooseMinMax)
@@ -43,13 +35,10 @@ short array_max_min(short *array, bool chooseMinMax)
 
 int main()
 {
-    // 输入
     scanf("%hd", &n);
     short judges[n];
     for (short i = 0; i < n; i++)
         scanf("%hd", &judges[i]);
-
-    // 求去最大最小和
     short mx = array_max_min(judges, false), mn = array_max_min(judges, true), count = 0;
     for (short i = 0; i < n; i++)
     {

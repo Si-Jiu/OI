@@ -1,15 +1,4 @@
-/**
- * @file P5735.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-01-29
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cmath>
-#include <cstdio>
+#include <bits/stdc++.h>
 
 using namespace std;
 

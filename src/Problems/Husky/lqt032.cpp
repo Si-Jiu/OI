@@ -1,7 +1,4 @@
 #include <bits/stdc++.h>
-#define short long long // OI千万题，longlong第一题，类型不规范，RE两行泪
-#define llong long long
-#define float double
 
 using namespace std;
 
@@ -23,5 +20,6 @@ int main()
         sort(n.begin(), n.end(), comp);
         cout << n;
     }
+
     return 0;
 }

@@ -1,21 +1,8 @@
-/**
- * @file T203473.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-03-04
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cstring>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 const int LEN = 10086;
-
 short a[LEN], b[LEN], c[LEN];
 
 void read(short num[])
@@ -69,10 +56,7 @@ int main()
         sub(b, a);
     }
     else
-    {
         sub(a, b);
-    }
-
     print();
 
     return 0;

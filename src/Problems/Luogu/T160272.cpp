@@ -1,16 +1,4 @@
-/**
- * @file T160272.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-02-05
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <algorithm>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -43,7 +31,7 @@ int main()
     // 排序
     sort(students, students + n, comp);
 
-    //输出
+    // 输出
     cout << students[k - 1].name;
 
     return 0;

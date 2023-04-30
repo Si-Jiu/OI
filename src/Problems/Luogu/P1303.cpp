@@ -1,26 +1,13 @@
-/**
- * @file P1303.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-03-05
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cstring>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 const int LEN = 2005;
-
-short a[LEN], b[LEN], c[LEN+LEN+30];
+short a[LEN], b[LEN], c[LEN + LEN + 30];
 
 void read(short num[])
 {
-    memset(num, 0, 2*(LEN+LEN));
+    memset(num, 0, 2 * (LEN + LEN));
     string temp;
     cin >> temp;
     for (short i = 0, j = temp.length() - 1; i < temp.length(); i++, j--)
@@ -46,7 +33,7 @@ void mul()
 
 void print()
 {
-    int pos = (LEN+LEN) - 1;
+    int pos = (LEN + LEN) - 1;
     while (pos > 0 && c[pos] == 0)
         pos--;
     for (int i = pos; i >= 0; i--)

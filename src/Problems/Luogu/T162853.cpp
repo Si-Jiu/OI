@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#define short long long
-#define float double
 
 using namespace std;
 
@@ -14,12 +12,10 @@ int main()
     for (int i = 1; i < a.size(); i++)
     {
         if (!homework.empty())
-        {
             if (homework.top() == a[i])
                 homework.pop();
             else
                 homework.push(a[i]);
-        }
         else
             homework.push(a[i]);
     }

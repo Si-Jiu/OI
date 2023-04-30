@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#define short long long // OI千万题，longlong第一题，类型不规范，RE两行泪
-#define float double
 
 using namespace std;
 

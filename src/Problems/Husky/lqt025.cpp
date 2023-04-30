@@ -1,12 +1,11 @@
 #include <bits/stdc++.h>
-#define short long long // OI千万题，longlong第一题，类型不规范，RE两行泪
-#define float double
 
 using namespace std;
 
 short n, m, posX = 1, posY = 1;
 string commands, tmp;
 bool maze[105][105];
+
 int main()
 {
     memset(maze, 0, sizeof(maze));

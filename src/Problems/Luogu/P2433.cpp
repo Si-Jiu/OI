@@ -1,13 +1,4 @@
-/**
- * @file P2433.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @date 2023-01-25
- *
- * 不会有什么注释的, 做好心理准备 :)
- *
- */
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -15,7 +6,6 @@ int main()
 {
     short q;
     cin >> q;
-
     if (q == 1)
         cout << "I love Luogu!";
     else if (q == 2)

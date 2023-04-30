@@ -1,16 +1,4 @@
-/**
- * @file T203473.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-03-04
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cstring>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 

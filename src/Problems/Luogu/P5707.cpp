@@ -1,16 +1,4 @@
-/**
- * @file P5707.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-02-25
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cmath>
-#include <cstdio>
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -22,15 +10,12 @@ int main()
     if (t > 50)
     {
         t -= 50;
-
         m = t % 60;
         h -= t / 60;
         if (m != 0)
             h -= 1;
         if (h <= 0)
-        {
             h = 23 - abs(h);
-        }
     }
     else
         m -= t;

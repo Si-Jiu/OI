@@ -14,13 +14,11 @@ int main()
     {
         int temp[i], index = 0, sum = 0;
         for (int j = 1; j < i; j++)
-        {
             if (i % j == 0)
             {
                 temp[index] = j;
                 index++;
             }
-        }
         for (int j = 0; j < index; j++)
             sum += temp[j];
         if (sum == i)

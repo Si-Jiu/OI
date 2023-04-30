@@ -1,16 +1,4 @@
-/**
- * @file P1480.cpp
- * @author 肆鸠 (si_jiu49@outlook.com)
- * @brief
- * @version 0.1
- * @date 2023-03-05
- *
- * @copyright Copyright (c) 2023
- *
- */
-#include <cstring>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -38,6 +26,7 @@ long long div()
         c[i] = r / b;
         r %= b;
     }
+
     return r;
 }
 

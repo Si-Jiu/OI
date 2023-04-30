@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#define short long long
-#define float double
 
 using namespace std;
 

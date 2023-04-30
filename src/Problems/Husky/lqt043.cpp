@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
     short n;
-    int count = 1;
     cin >> n;
-    for (short i = 1; i < n; i++)
-        count = (count + 1) * 2;
-    cout << count;
+    short x, y, z;
+    cin >> x >> y >> z;
+    short a, b, c;
+    cin >> a >> b >> c;
 
     return 0;
 }
