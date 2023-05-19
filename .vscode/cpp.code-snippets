@@ -17,12 +17,11 @@
   "函数": {
     "prefix": "func",
     "body": [
-      "/**$4",
       "${1|int,void,bool,long,long long,float,double|} $2($3)",
       "{",
       "    $0",
       "",
-      "    return ; // Type: $1",
+      "    return 0;",
       "}"
     ]
   },
