@@ -6,7 +6,7 @@ int main()
 {
     double a;
     cin >> a;
-    cout << abs(a);
+    printf("%.2f", abs(a));
 
     return 0;
 }
