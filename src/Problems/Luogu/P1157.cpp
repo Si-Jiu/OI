@@ -2,27 +2,28 @@
 
 using namespace std;
 
-short n, r;
+short n, r, res[21 + 5];
 
-void dfs(short deep = 1, string s = "")
+void dfs(int cur)
 {
-    if (deep > r)
-        cout << s << endl;
-    else
-        for (short i = 1; i <= n; i++)
-        {
-            char c = '0' + i;
-            if (s.find(c) != string::npos)
-                continue;
-            string b = s + "  " + c;
-            dfs(deep + 1, b);
-        }
+    if (cur == r)
+    {
+        for (short i = 0; i < r; i++)
+            cout << res[i] << ' ';
+        cout << endl;
+        return;
+    }
+    for (short i = 1; i <= n; i++)
+    {
+        res[cur] = i;
+        dfs(cur + 1);
+    }
 }
 
 int main()
 {
     cin >> n >> r;
-    dfs();
+    dfs(0);
 
     return 0;
 }
