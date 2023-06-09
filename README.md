@@ -1,3 +1,9 @@
 # Learn-Cpp
+
 ## 介绍
-本仓库是肆鸠学习C++的
+
+本仓库是肆鸠学习C++的备份和共享仓库
+
+## 环境
+
+环境为 Windows 11 + LLVM Project 16.0.4 + VSCode + Mingw64 x86_64-posix-seh-rev1 13.1.0
