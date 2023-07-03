@@ -2,28 +2,23 @@
 
 using namespace std;
 
-struct president
-{
+struct president {
     string vote;
     short num;
 };
 
-bool comp(const president &a, const president &b)
-{
-    if (a.vote.length() == b.vote.length())
-    {
+bool comp(const president &a, const president &b) {
+    if (a.vote.length() == b.vote.length()) {
         return a.vote > b.vote;
     }
     return a.vote.length() > b.vote.length();
 }
 
-int main()
-{
+int main() {
     short n;
     cin >> n;
     president presidents[n];
-    for (short i = 0; i < n; i++)
-    {
+    for (short i = 0; i < n; i++) {
         cin >> presidents[i].vote;
         presidents[i].num = i + 1;
     }

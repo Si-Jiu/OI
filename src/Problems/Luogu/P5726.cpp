@@ -4,27 +4,20 @@ using namespace std;
 
 short n;
 
-short array_max_min(short *array, bool chooseMinMax)
-{
+short array_max_min(short *array, bool chooseMinMax) {
     short Index = -1, Value;
     if (chooseMinMax)
         Value = -1;
     else
         Value = 11;
-    for (short i = 0; i < n; i++)
-    {
-        if (chooseMinMax)
-        {
-            if (array[i] > Value)
-            {
+    for (short i = 0; i < n; i++) {
+        if (chooseMinMax) {
+            if (array[i] > Value) {
                 Value = array[i];
                 Index = i;
             }
-        }
-        else
-        {
-            if (array[i] < Value)
-            {
+        } else {
+            if (array[i] < Value) {
                 Value = array[i];
                 Index = i;
             }
@@ -33,15 +26,14 @@ short array_max_min(short *array, bool chooseMinMax)
     return Index;
 }
 
-int main()
-{
+int main() {
     scanf("%hd", &n);
     short judges[n];
     for (short i = 0; i < n; i++)
         scanf("%hd", &judges[i]);
-    short mx = array_max_min(judges, false), mn = array_max_min(judges, true), count = 0;
-    for (short i = 0; i < n; i++)
-    {
+    short mx = array_max_min(judges, false), mn = array_max_min(judges, true),
+          count = 0;
+    for (short i = 0; i < n; i++) {
         if (i == mx || i == mn)
             continue;
         count += judges[i];

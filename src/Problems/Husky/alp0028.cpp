@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n, m, x;
     cin >> n >> m >> x;
     for (int i = n; i <= m; i++)

@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     double c;
     cin >> c;
     printf("%.4f", c * 9 / 5 + 32);

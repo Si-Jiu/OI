@@ -2,15 +2,13 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     long long m, n;
     cin >> m >> n;
     long long sum = 0, cnt = 0;
     while (m % 17 != 0)
         m++;
-    for (long long i = m; i <= n; i += 17)
-    {
+    for (long long i = m; i <= n; i += 17) {
         sum += i;
         cnt++;
     }

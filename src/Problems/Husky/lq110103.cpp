@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short a;
     cin >> a;
     printf("%.2f", a * a / 4.0);

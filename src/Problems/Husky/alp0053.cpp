@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short n, m;
     cin >> n >> m;
     int arr[n][m];
@@ -14,8 +13,7 @@ int main()
     cin >> x;
     for (short i = 0; i < n; i++)
         for (short j = 0; j < m; j++)
-            if (arr[i][j] == x)
-            {
+            if (arr[i][j] == x) {
                 cout << i + 1 << ' ' << j + 1 << endl;
                 return 0;
             }

@@ -2,15 +2,13 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     // freopen("factorial.in", "r", stdin);
     // freopen("factorial.out", "w", stdout);
 
     short t;
     cin >> t;
-    for (short i = 0; i < t; i++)
-    {
+    for (short i = 0; i < t; i++) {
         int n, m;
         cin >> n >> m;
         unsigned long long sum = 1;

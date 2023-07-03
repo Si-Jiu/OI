@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
     int a[n];
@@ -11,8 +10,7 @@ int main()
         cin >> a[i];
     int q;
     cin >> q;
-    for (int i = 0; i < q; i++)
-    {
+    for (int i = 0; i < q; i++) {
         int b;
         cin >> b;
         int *pos = lower_bound(a, a + n, b);

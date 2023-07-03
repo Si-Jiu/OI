@@ -7,8 +7,7 @@ const int LEN = 5000;
 short a[LEN], c[LEN];
 long long b;
 
-void read(short num[])
-{
+void read(short num[]) {
     memset(num, 0, 1010);
     string temp;
     cin >> temp;
@@ -16,12 +15,10 @@ void read(short num[])
         num[j] = temp[i] - '0';
 }
 
-long long div()
-{
+long long div() {
     memset(c, 0, 2 * LEN);
     long long r = 0;
-    for (int i = LEN - 1; i >= 0; i--)
-    {
+    for (int i = LEN - 1; i >= 0; i--) {
         r = r * 10 + a[i];
         c[i] = r / b;
         r %= b;
@@ -30,8 +27,7 @@ long long div()
     return r;
 }
 
-void print()
-{
+void print() {
     int pos = LEN - 1;
     while (pos > 0 && c[pos] == 0)
         pos--;
@@ -39,8 +35,7 @@ void print()
         cout << c[i];
 }
 
-int main()
-{
+int main() {
     read(a);
     cin >> b;
     div();

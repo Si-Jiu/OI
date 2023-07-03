@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short num;
     cin >> num;
     cout << "Today, I ate " << num << " apple";

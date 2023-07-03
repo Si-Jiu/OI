@@ -5,16 +5,13 @@ using namespace std;
 int n, m, tmp, max1, sum = 0;
 deque<int> c;
 
-int main()
-{
+int main() {
     cin >> n >> m;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> tmp;
         sum += tmp;
         c.push_back(tmp);
-        if (c.size() > m)
-        {
+        if (c.size() > m) {
             sum -= c.front();
             c.pop_front();
         }

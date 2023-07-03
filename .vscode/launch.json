@@ -11,16 +11,6 @@
             "preLaunchTask": "Build C++",
             "internalConsoleOptions": "neverOpen",
             "console": "integratedTerminal"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug without bulid",
-            "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "internalConsoleOptions": "neverOpen",
-            "console": "integratedTerminal"
         }
     ]
 }

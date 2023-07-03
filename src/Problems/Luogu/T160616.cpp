@@ -6,25 +6,18 @@ queue<short> visitor;
 short op;
 long long sum, n;
 
-int main()
-{
+int main() {
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         cin >> op;
-        if (op == 1)
-        {
+        if (op == 1) {
             cin >> op;
             sum += op;
             visitor.push(op);
-        }
-        else if (op == 2 && !visitor.empty())
-        {
+        } else if (op == 2 && !visitor.empty()) {
             sum -= visitor.front();
             visitor.pop();
-        }
-        else
-        {
+        } else {
             if (visitor.empty())
                 cout << "none" << endl;
             else

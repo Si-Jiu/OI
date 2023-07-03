@@ -4,8 +4,7 @@ using namespace std;
 
 short a[505], b[505], c[505];
 
-void read(short num[])
-{
+void read(short num[]) {
     memset(num, 0, 1010);
     string temp;
     cin >> temp;
@@ -13,22 +12,18 @@ void read(short num[])
         num[j] = temp[i] - '0';
 }
 
-void add()
-{
+void add() {
     memset(c, 0, 1010);
-    for (int i = 0; i < 505; i++)
-    {
+    for (int i = 0; i < 505; i++) {
         c[i] += a[i] + b[i];
-        if (c[i] >= 10)
-        {
+        if (c[i] >= 10) {
             c[i + 1]++;
             c[i] -= 10;
         }
     }
 }
 
-void print()
-{
+void print() {
     int pos = 504;
     while (pos > 0 && c[pos] == 0)
         pos--;
@@ -36,8 +31,7 @@ void print()
         cout << c[i];
 }
 
-int main()
-{
+int main() {
     read(a);
     read(b);
     add();

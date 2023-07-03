@@ -5,11 +5,9 @@ using namespace std;
 long long n, tmp;
 vector<long long> s;
 
-int main()
-{
+int main() {
     cin >> n;
-    for (long long i = 0; i < n; i++)
-    {
+    for (long long i = 0; i < n; i++) {
         cin >> tmp;
         s.push_back(tmp);
     }

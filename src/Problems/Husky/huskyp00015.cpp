@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short y, m, hd;
     cin >> y >> m >> hd;
     short dayInMonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

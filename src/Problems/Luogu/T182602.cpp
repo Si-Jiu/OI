@@ -2,10 +2,8 @@
 
 using namespace std;
 
-void encryption(string original)
-{
-    if (original.length() == 3)
-    {
+void encryption(string original) {
+    if (original.length() == 3) {
         cout << original[0] << original[2] << original[1];
         return;
     }
@@ -15,8 +13,7 @@ void encryption(string original)
     encryption(original.substr(temp, temp));
 }
 
-int main()
-{
+int main() {
     string original;
     cin >> original;
     encryption(original);

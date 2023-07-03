@@ -5,8 +5,7 @@ using namespace std;
 const int LEN = 2005;
 short a[LEN], b[LEN], c[LEN + LEN + 30];
 
-void read(short num[])
-{
+void read(short num[]) {
     memset(num, 0, 2 * (LEN + LEN));
     string temp;
     cin >> temp;
@@ -14,16 +13,12 @@ void read(short num[])
         num[j] = temp[i] - 48;
 }
 
-void mul()
-{
+void mul() {
     memset(c, 0, 2 * (LEN + LEN));
-    for (int i = 0; i < LEN; i++)
-    {
-        for (int j = 0; j < LEN; j++)
-        {
+    for (int i = 0; i < LEN; i++) {
+        for (int j = 0; j < LEN; j++) {
             c[i + j] += a[i] * b[j];
-            if (c[i + j] >= 10)
-            {
+            if (c[i + j] >= 10) {
                 c[i + j + 1] += c[i + j] / 10;
                 c[i + j] %= 10;
             }
@@ -31,8 +26,7 @@ void mul()
     }
 }
 
-void print()
-{
+void print() {
     int pos = (LEN + LEN) - 1;
     while (pos > 0 && c[pos] == 0)
         pos--;
@@ -40,8 +34,7 @@ void print()
         cout << c[i];
 }
 
-int main()
-{
+int main() {
     read(a);
     read(b);
     mul();

@@ -4,13 +4,11 @@ using namespace std;
 
 int n;
 
-void dfs(int deep = 1, string s = "")
-{
+void dfs(int deep = 1, string s = "") {
     if (deep > n)
         cout << s << endl;
     else
-        for (int i = 1; i <= n; i++)
-        {
+        for (int i = 1; i <= n; i++) {
             char c = '0' + i;
             if (s.find(c) != string::npos)
                 continue;
@@ -19,8 +17,7 @@ void dfs(int deep = 1, string s = "")
         }
 }
 
-int main()
-{
+int main() {
     cin >> n;
     dfs();
 

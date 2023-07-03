@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     bool t;
     long long s, h;
     cin >> t >> s >> h;

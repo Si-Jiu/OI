@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short n;
     cin >> n;
     if (n <= 7 && n % 2 != 0)

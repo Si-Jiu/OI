@@ -2,19 +2,16 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     priority_queue<int> numbers;
     int n;
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         int add;
         cin >> add;
         numbers.push(add);
     }
-    while (numbers.size() > 1)
-    {
+    while (numbers.size() > 1) {
         int tmp = numbers.top();
         numbers.pop();
         tmp -= numbers.top();

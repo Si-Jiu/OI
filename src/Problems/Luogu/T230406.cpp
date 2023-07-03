@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short n;
     long long sum = 1;
     cin >> n;

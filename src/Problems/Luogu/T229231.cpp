@@ -5,8 +5,7 @@ using namespace std;
 const int LEN = 1000 + 500;
 int a[LEN], b[LEN];
 
-void read(int num[])
-{
+void read(int num[]) {
     memset(num, 0, sizeof(int) * LEN);
     string s;
     cin >> s;
@@ -14,21 +13,17 @@ void read(int num[])
         num[j] = s[i] - '0';
 }
 
-void add(int num1[], int num2[])
-{
-    for (int i = 0; i < LEN; i++)
-    {
+void add(int num1[], int num2[]) {
+    for (int i = 0; i < LEN; i++) {
         num1[i] += num2[i];
-        if (num1[i] >= 10)
-        {
+        if (num1[i] >= 10) {
             num1[i + 1]++;
             num1[i] -= 10;
         }
     }
 }
 
-void print(int num[])
-{
+void print(int num[]) {
     int pos = LEN - 1;
     while (pos > 0 && num[pos] == 0)
         pos--;
@@ -36,13 +31,11 @@ void print(int num[])
         cout << num[i];
 }
 
-int main()
-{
+int main() {
     short n;
     cin >> n;
     memset(a, 0, sizeof(int) * LEN);
-    for (short i = 0; i < n; i++)
-    {
+    for (short i = 0; i < n; i++) {
         read(b);
         add(a, b);
     }

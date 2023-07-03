@@ -2,25 +2,20 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     priority_queue<int> scores;
     int n;
     char o;
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         cin >> o;
-        if (o == 'I')
-        {
+        if (o == 'I') {
             int addScore;
             cin >> addScore;
             scores.push(addScore);
-        }
-        else if (scores.empty())
+        } else if (scores.empty())
             cout << -1 << endl;
-        else
-        {
+        else {
             cout << scores.top() << endl;
             scores.pop();
         }

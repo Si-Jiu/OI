@@ -6,24 +6,18 @@ deque<int> students = {0, 1};
 int n;
 char op;
 
-int main()
-{
+int main() {
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         cin >> op;
-        if (op == 'A')
-        {
+        if (op == 'A') {
             int tmp;
             cin >> tmp;
             students.push_back(tmp);
-        }
-        else if (op == 'B')
-        {
+        } else if (op == 'B') {
             cout << students.front() << endl;
             students.pop_front();
-        }
-        else
+        } else
             students.pop_back();
     }
 

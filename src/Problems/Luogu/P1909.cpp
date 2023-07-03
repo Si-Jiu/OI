@@ -4,13 +4,11 @@ using namespace std;
 
 unsigned short n;
 
-struct packing
-{
+struct packing {
     unsigned short num, price;
 };
 
-bool comp(packing a, packing b)
-{
+bool comp(packing a, packing b) {
     short i = 1, tap;
     while (a.num * i >= n)
         i++;
@@ -25,12 +23,11 @@ bool comp(packing a, packing b)
     return tap < tbp;
 }
 
-int main()
-{
+int main() {
 
     packing pencils[3];
-    cin >> n >> pencils[0].num >> pencils[0].price >> pencils[1].num >> pencils[1].price >> pencils[2].num >>
-        pencils[2].price;
+    cin >> n >> pencils[0].num >> pencils[0].price >> pencils[1].num >>
+        pencils[1].price >> pencils[2].num >> pencils[2].price;
     sort(pencils, pencils + 3, comp);
     int i = 1;
     while (pencils[0].price * i >= n)

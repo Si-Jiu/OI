@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short n, m;
     unsigned long long up = 1;
     cin >> n >> m;

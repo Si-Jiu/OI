@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     double a, b, c, p;
     cin >> a >> b >> c;
     p = 0.5 * (a + b + c);

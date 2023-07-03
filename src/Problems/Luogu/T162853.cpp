@@ -5,12 +5,10 @@ using namespace std;
 stack<char> homework;
 string a;
 
-int main()
-{
+int main() {
     cin >> a;
     homework.push(a[0]);
-    for (int i = 1; i < a.size(); i++)
-    {
+    for (int i = 1; i < a.size(); i++) {
         if (!homework.empty())
             if (homework.top() == a[i])
                 homework.pop();
@@ -20,8 +18,7 @@ int main()
             homework.push(a[i]);
     }
     vector<char> temp;
-    while (!homework.empty())
-    {
+    while (!homework.empty()) {
         temp.push_back(homework.top());
         homework.pop();
     }

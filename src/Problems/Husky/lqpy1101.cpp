@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string str;
     cin >> str;
     if (str.find("er") != str.npos)

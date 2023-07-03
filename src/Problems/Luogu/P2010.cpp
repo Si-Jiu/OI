@@ -2,22 +2,17 @@
 
 using namespace std;
 
-struct date
-{
+struct date {
     short year, month, day;
 };
 
-bool IsPalindrome(string o)
-{
+bool IsPalindrome(string o) {
     int l = 0, r = o.length() - 1;
-    while (true)
-    {
-        if (l == r || l == r - 1)
-        {
+    while (true) {
+        if (l == r || l == r - 1) {
             break;
         }
-        if (o[l] == o[r])
-        {
+        if (o[l] == o[r]) {
             l++;
             r--;
             continue;
@@ -27,8 +22,7 @@ bool IsPalindrome(string o)
     return true;
 }
 
-int main()
-{
+int main() {
     string t1, t2;
     cin >> t1 >> t2;
     if (t1 == t2)
@@ -43,8 +37,7 @@ int main()
     date2.day = stoi(t2.substr(6, 2));
     for (short year = date1.year; year <= date2.year; year++)
         for (short month = date1.month; month <= date2.month; month++)
-            for (short day = date1.day; day <= date2.day; day++)
-            {
+            for (short day = date1.day; day <= date2.day; day++) {
                 t1 = "";
                 t1 += to_string(year);
                 if (month < 10)

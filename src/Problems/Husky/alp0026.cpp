@@ -2,12 +2,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short in;
     int cnt = 0, cnt1 = -1;
-    do
-    {
+    do {
         cin >> in;
         cnt += in;
         cnt1++;

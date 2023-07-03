@@ -5,8 +5,7 @@ using namespace std;
 const int LEN = 10086;
 short a[LEN], b[LEN], c[LEN];
 
-void read(short num[])
-{
+void read(short num[]) {
     memset(num, 0, 2 * LEN);
     string temp;
     cin >> temp;
@@ -14,13 +13,10 @@ void read(short num[])
         num[j] = temp[i] - '0';
 }
 
-void sub(short a[], short b[])
-{
+void sub(short a[], short b[]) {
     memset(c, 0, 2 * LEN);
-    for (int i = 0; i < LEN; i++)
-    {
-        if (a[i] < b[i])
-        {
+    for (int i = 0; i < LEN; i++) {
+        if (a[i] < b[i]) {
             a[i + 1]--;
             a[i] += 10;
         }
@@ -28,8 +24,7 @@ void sub(short a[], short b[])
     }
 }
 
-void print()
-{
+void print() {
     int pos = LEN - 1;
     while (pos > 0 && c[pos] == 0)
         pos--;
@@ -37,25 +32,21 @@ void print()
         cout << c[i];
 }
 
-int test(short c[])
-{
+int test(short c[]) {
     int pos = LEN - 1;
     while (pos > 0 && c[pos] == 0)
         pos--;
     return pos;
 }
 
-int main()
-{
+int main() {
     read(a);
     read(b);
     int indexA = test(a), indexB = test(b);
-    if (indexA < indexB)
-    {
+    if (indexA < indexB) {
         cout << '-';
         sub(b, a);
-    }
-    else
+    } else
         sub(a, b);
     print();
 

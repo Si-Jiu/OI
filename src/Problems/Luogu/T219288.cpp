@@ -2,11 +2,9 @@
 
 using namespace std;
 
-int binary_search(unsigned int arr[], unsigned short len, unsigned int key)
-{
+int binary_search(unsigned int arr[], unsigned short len, unsigned int key) {
     int left = 0, right = len;
-    while (left <= right)
-    {
+    while (left <= right) {
         int mid = (left + right) / 2;
         if (arr[mid] == key)
             return mid;
@@ -18,8 +16,7 @@ int binary_search(unsigned int arr[], unsigned short len, unsigned int key)
     return -1;
 }
 
-int main()
-{
+int main() {
     unsigned short n;
     cin >> n;
     unsigned int a[n], x;

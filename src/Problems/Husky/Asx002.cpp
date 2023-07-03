@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     long long a, b, c;
     cin >> a >> b >> c;
     if (a > b)

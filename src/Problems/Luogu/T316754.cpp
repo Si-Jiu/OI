@@ -4,13 +4,10 @@ using namespace std;
 
 unsigned int n;
 
-void dpf(int n)
-{
-    for (int i = 2; i * i <= n; i++)
-    {
+void dpf(int n) {
+    for (int i = 2; i * i <= n; i++) {
         int cnt = 0;
-        while (n % i == 0)
-        {
+        while (n % i == 0) {
             cnt++;
             n /= i;
         }
@@ -21,8 +18,7 @@ void dpf(int n)
         cout << n << " 1" << endl;
 }
 
-int main()
-{
+int main() {
     cin >> n;
     dpf(n);
 

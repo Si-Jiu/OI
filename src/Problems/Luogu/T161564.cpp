@@ -5,8 +5,7 @@ using namespace std;
 vector<char> word;
 string origin;
 
-int main()
-{
+int main() {
     cin >> origin;
     for (short i = 0; i < origin.length(); i++)
         if (origin[i] == '*')

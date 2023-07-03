@@ -4,18 +4,14 @@ using namespace std;
 
 stack<bool> a;
 
-int main()
-{
+int main() {
     char tmp;
-    do
-    {
+    do {
         cin >> tmp;
         if (tmp == '(')
             a.push(true);
-        if (tmp == ')')
-        {
-            if (a.empty())
-            {
+        if (tmp == ')') {
+            if (a.empty()) {
                 cout << "NO";
                 return 0;
             }

@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     map<string, short> rubbishes;
     short n;
     rubbishes["FOOD WASTE"] = 0;
@@ -11,21 +10,23 @@ int main()
     rubbishes["HAZARDOUS"] = 0;
     rubbishes["RESIDUAL WASTE"] = 0;
     cin >> n;
-    for (int i = 0; i <= n; i++)
-    {
+    for (int i = 0; i <= n; i++) {
         string rubbish;
         getline(cin, rubbish);
-        if (rubbish == "leaves" || rubbish == "watermelon peel" || rubbish == "leftovers")
+        if (rubbish == "leaves" || rubbish == "watermelon peel" ||
+            rubbish == "leftovers")
             rubbishes["FOOD WASTE"]++;
-        else if (rubbish == "paper box" || rubbish == "plastic bottle" || rubbish == "clothes")
+        else if (rubbish == "paper box" || rubbish == "plastic bottle" ||
+                 rubbish == "clothes")
             rubbishes["RECYCLABLE"]++;
-        else if (rubbish == "rechargeable battery" || rubbish == "abandoned medicine" || rubbish == "disinfectant")
+        else if (rubbish == "rechargeable battery" ||
+                 rubbish == "abandoned medicine" || rubbish == "disinfectant")
             rubbishes["HAZARDOUS"]++;
-        else if (rubbish == "mask" || rubbish == "battery" || rubbish == "plastic bag")
+        else if (rubbish == "mask" || rubbish == "battery" ||
+                 rubbish == "plastic bag")
             rubbishes["RESIDUAL WASTE"]++;
     }
-    for (auto r : rubbishes)
-    {
+    for (auto r : rubbishes) {
         cout << r.first << endl;
         cout << r.second << endl;
         break;

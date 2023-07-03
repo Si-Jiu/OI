@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n, m;
     scanf("%d %d", &n, &m);
     long long a[n];

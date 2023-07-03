@@ -2,16 +2,12 @@
 
 using namespace std;
 
-void bubble_sort(int data[], int n)
-{
+void bubble_sort(int data[], int n) {
     bool changed = true;
-    while (changed)
-    {
+    while (changed) {
         changed = false;
-        for (int i = 0; i < n - 1; i++)
-        {
-            if (data[i] > data[i + 1])
-            {
+        for (int i = 0; i < n - 1; i++) {
+            if (data[i] > data[i + 1]) {
                 swap(data[i], data[i + 1]);
                 changed = true;
             }
@@ -19,18 +15,15 @@ void bubble_sort(int data[], int n)
     }
 }
 
-int main()
-{
+int main() {
     unsigned short n;
     cin >> n;
     int arr[n];
-    for (short i = 0; i < n; i++)
-    {
+    for (short i = 0; i < n; i++) {
         cin >> arr[i];
     }
     bubble_sort(arr, n);
-    for (short i = 0; i < n; i++)
-    {
+    for (short i = 0; i < n; i++) {
         cout << arr[i] << ' ';
     }
 

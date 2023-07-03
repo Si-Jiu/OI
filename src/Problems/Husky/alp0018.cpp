@@ -2,12 +2,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int cnt = 0;
     short in;
-    do
-    {
+    do {
         cin >> in;
         cnt += in;
     } while (in != 0);

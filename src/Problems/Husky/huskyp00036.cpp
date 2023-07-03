@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string s;
     cin >> s;
     for (short i = 0; i < s.length(); i++)

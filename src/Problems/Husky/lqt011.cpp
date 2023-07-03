@@ -5,17 +5,14 @@ using namespace std;
 long long t, x;
 bool flag;
 
-int main()
-{
+int main() {
     cin >> t;
-    for (long long i = 0; i < t; i++)
-    {
+    for (long long i = 0; i < t; i++) {
         cin >> x;
         flag = false;
         for (long long j = 2; j * j < x; j++)
             if (x % j == 0)
-                if (gcd(j, x / j) == 1)
-                {
+                if (gcd(j, x / j) == 1) {
                     flag = true;
                     break;
                 }

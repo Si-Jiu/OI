@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int bubble_sort(unsigned short data[], short n)
-{
+int bubble_sort(unsigned short data[], short n) {
     int count = 0;
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < i; ++j)
@@ -13,8 +12,7 @@ int bubble_sort(unsigned short data[], short n)
     return count;
 }
 
-int main()
-{
+int main() {
     unsigned short n;
     cin >> n;
     unsigned short nums[n];

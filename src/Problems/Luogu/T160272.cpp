@@ -2,29 +2,24 @@
 
 using namespace std;
 
-struct stu
-{
+struct stu {
     string name;
     short score;
 };
 
-bool comp(stu a, stu b)
-{
-    if (a.score == b.score)
-    {
+bool comp(stu a, stu b) {
+    if (a.score == b.score) {
         return a.name < b.name;
     }
     return a.score > b.score;
 }
 
-int main()
-{
+int main() {
     // 变量和输入
     short n, k;
     cin >> n >> k;
     stu students[n];
-    for (short index = 0; index < n; index++)
-    {
+    for (short index = 0; index < n; index++) {
         cin >> students[index].name >> students[index].score;
     }
 

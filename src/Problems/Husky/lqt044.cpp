@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short n, k;
     cin >> n >> k;
     string words[n];
@@ -11,10 +10,8 @@ int main()
         cin >> words[i];
     int cnt = 0;
     string line;
-    for (short i = 0; i < n; i++)
-    {
-        if (cnt + words[i].length() > k)
-        {
+    for (short i = 0; i < n; i++) {
+        if (cnt + words[i].length() > k) {
             cout << line.substr(0, line.length() - 1) << endl;
             line = "";
             cnt = 0;

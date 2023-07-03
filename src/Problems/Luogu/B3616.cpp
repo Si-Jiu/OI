@@ -5,18 +5,14 @@ using namespace std;
 queue<long long> que;
 long long n, op;
 
-int main()
-{
+int main() {
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         cin >> op;
-        if (op == 1)
-        {
+        if (op == 1) {
             cin >> op;
             que.push(op);
-        }
-        else if (op == 2)
+        } else if (op == 2)
             if (que.empty())
                 cout << "ERR_CANNOT_POP" << endl;
             else

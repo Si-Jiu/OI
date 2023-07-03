@@ -2,8 +2,7 @@
 
 using namespace std;
 
-bool IsPrime(int num)
-{
+bool IsPrime(int num) {
     if (num == 1 || num == 4)
         return false;
     if (num == 2 || num == 3)
@@ -18,8 +17,7 @@ bool IsPrime(int num)
     return true;
 }
 
-int main()
-{
+int main() {
     short n;
     scanf("%hd", &n);
     int a[n];

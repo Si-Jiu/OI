@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short score;
     cin >> score;
     if (score >= 90)

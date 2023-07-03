@@ -2,8 +2,7 @@
 
 using namespace std;
 
-bool is_prime(int num)
-{
+bool is_prime(int num) {
     if (num < 2)
         return false;
     if (num == 2)
@@ -14,16 +13,13 @@ bool is_prime(int num)
     return true;
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
-    for (int i = n - 1; i >= 2; i--)
-    {
+    for (int i = n - 1; i >= 2; i--) {
         if (!is_prime(i))
             continue;
-        if (n % i == 0)
-        {
+        if (n % i == 0) {
             cout << i << endl;
             break;
         }

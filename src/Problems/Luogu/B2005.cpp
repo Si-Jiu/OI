@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string ch;
     cin >> ch;
     cout << "  " << ch << endl;

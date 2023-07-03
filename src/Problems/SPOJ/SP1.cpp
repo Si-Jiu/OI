@@ -2,11 +2,9 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string a;
-    while (a != "42")
-    {
+    while (a != "42") {
         cin >> a;
         cout << a;
     }

@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     double xA, xB, yA, yB;
     cin >> xA >> yA;
     cin >> xB >> yB;

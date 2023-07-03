@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     map<float, string> jieQi;
     jieQi[1.05] = "XH";
     jieQi[1.20] = "DH";
@@ -32,14 +31,12 @@ int main()
     short m, n;
     cin >> m >> n;
     float date = m + n * 0.01;
-    if (date > 12.21)
-    {
+    if (date > 12.21) {
         cout << "XH" << endl;
         return 0;
     }
     for (auto p : jieQi)
-        if (p.first >= date)
-        {
+        if (p.first >= date) {
             cout << p.second << endl;
             return 0;
         }

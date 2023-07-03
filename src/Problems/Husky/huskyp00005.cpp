@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     printf("%.4f", 2023.2023);
 
     return 0;

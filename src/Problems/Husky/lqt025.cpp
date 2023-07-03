@@ -6,19 +6,16 @@ short n, m, posX = 1, posY = 1;
 string commands, tmp;
 bool maze[105][105];
 
-int main()
-{
+int main() {
     memset(maze, 0, sizeof(maze));
     scanf("%lld %lld", &n, &m);
-    for (short i = 1; i <= n; i++)
-    {
+    for (short i = 1; i <= n; i++) {
         cin >> tmp;
         for (short j = 1; j <= m; j++)
             maze[i][j] = tmp[j - 1] == '.' ? true : false;
     }
     cin >> commands;
-    for (auto cmd : commands)
-    {
+    for (auto cmd : commands) {
         if (cmd == 'U' && posX - 1 > 0 && maze[posX - 1][posY]) // 向上
             posX--;
         else if (cmd == 'D' && posX + 1 <= n && maze[posX + 1][posY]) // 向下

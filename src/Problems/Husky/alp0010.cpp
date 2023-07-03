@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     short year;
     cin >> year;
     if (year % 4 == 0 && year % 100 != 0)
