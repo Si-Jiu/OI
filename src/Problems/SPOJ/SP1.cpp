@@ -4,9 +4,11 @@ using namespace std;
 
 int main() {
     string a;
-    while (a != "42") {
+    while (1) {
         cin >> a;
-        cout << a;
+        if (a == "42")
+            break;
+        cout << a << ' ';
     }
 
     return 0;
