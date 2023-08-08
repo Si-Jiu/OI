@@ -2,22 +2,24 @@
 
 using namespace std;
 
+map<int, int> a;
+int n, q;
+
 int main() {
-    int n;
     cin >> n;
-    int a[n];
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
-    int q;
+    for (int i = 0; i < n; i++) {
+        int tmp;
+        cin >> tmp;
+        a[tmp] = i + 1;
+    }
     cin >> q;
     for (int i = 0; i < q; i++) {
         int b;
         cin >> b;
-        int *pos = lower_bound(a, a + n, b);
-        if (*pos != b)
+        if (a.count(b) == 0)
             cout << 0 << endl;
         else
-            cout << pos - a;
+            cout << a[b] << endl;
     }
 
     return 0;

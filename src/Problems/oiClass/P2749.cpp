@@ -3,10 +3,9 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    short a, b;
     cin >> a >> b;
-    cout << (a + b) * 2 << endl;
-    cout << a * b << endl;
+    cout << (a + 1 == b || a == b ? "Yes" : "No") << endl;
 
     return 0;
 }
