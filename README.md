@@ -6,4 +6,4 @@
 
 ## 环境
 
-环境为 Windows 10 + LLVM Project 16.0.6 + VSCode + Mingw64 x86_64-13.1.0-release-posix-seh-ucrt-rt_v11-rev1
+环境为 Windows 10 + LLVM 17.0.0-rc2 + VSCode + Mingw64 x86_64-13.1.0-release-posix-seh-ucrt-rt_v11-rev1
