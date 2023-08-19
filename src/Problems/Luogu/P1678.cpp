@@ -1,10 +1,15 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 long long m, n, a[100000], b[100000], cnt = 0;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> m >> n;
     for (long long i = 0; i < m; i++)
         cin >> a[i];

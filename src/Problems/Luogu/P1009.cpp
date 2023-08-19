@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -51,6 +52,10 @@ void print(short num[]) {
 short tmp1[10], tmp2[LEN], tmp3[LEN], tmp4[LEN];
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short n;
     cin >> n;
     memset(tmp4, 0, sizeof(tmp4));

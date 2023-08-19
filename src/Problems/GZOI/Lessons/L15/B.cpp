@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -11,6 +12,10 @@ long long SumDigit(long long num, long long sum = 0) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     long long a;
     cin >> a;
     cout << SumDigit(a) << endl;

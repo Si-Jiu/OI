@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -17,6 +18,10 @@ bool comp(const student &a, const student &b) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short n;
     cin >> n;
     student students[n];

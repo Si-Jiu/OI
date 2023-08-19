@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -17,6 +18,10 @@ int binary_search(unsigned int arr[], unsigned short len, unsigned int key) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     unsigned short n;
     cin >> n;
     unsigned int a[n], x;

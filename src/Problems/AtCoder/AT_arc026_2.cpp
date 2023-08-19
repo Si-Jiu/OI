@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -14,6 +15,10 @@ void fenjie(unsigned long long n) {
         }
 }
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> n;
     if (n == 1) {
         cout << "Deficient" << endl;

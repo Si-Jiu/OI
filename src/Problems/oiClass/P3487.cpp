@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 #define a using
 #define b namespace
 #define c std

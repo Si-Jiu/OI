@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -14,6 +15,10 @@ void check(unsigned long long n, short d) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     unsigned long long n;
     short d;
     cin >> n >> d;

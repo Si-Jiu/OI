@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -10,6 +11,10 @@ bool isPrime(short n) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int s;
     cin >> s;
     vector<int> cnt;

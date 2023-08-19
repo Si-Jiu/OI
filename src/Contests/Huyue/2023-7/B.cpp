@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -10,6 +11,10 @@ struct node {
 node nodes[10005];
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     // freopen("song.in", "r", stdin);
     // freopen("song.out", "w", stdout);
     unsigned long long n, t;

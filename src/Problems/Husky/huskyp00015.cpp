@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short y, m, hd;
     cin >> y >> m >> hd;
     short dayInMonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

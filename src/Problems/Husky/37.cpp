@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cout << "00:00" << endl;
     cout << "01:10" << endl;
     cout << "02:20" << endl;

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -7,6 +8,10 @@ map<int, int> scoreCnt;
 int q;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> q;
     for (int i = 0; i < q; i++) {
         char o;

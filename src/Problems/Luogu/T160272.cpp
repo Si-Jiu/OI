@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -15,6 +16,10 @@ bool comp(stu a, stu b) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     // 变量和输入
     short n, k;
     cin >> n >> k;

@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int n;
     cin >> n;
     queue<int> ticket;
@@ -28,7 +33,7 @@ int main() {
         pos.pop();
     }
     for (int i = 0; i < n; i++)
-        cout<<ans[i]<<' ';
+        cout << ans[i] << ' ';
 
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -13,6 +14,10 @@ bool comp(const int &a, const int &b) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> n >> c;
     for (int i = 0; i < n; i++) {
         cin >> a[i];

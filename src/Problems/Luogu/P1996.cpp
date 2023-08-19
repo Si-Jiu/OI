@@ -1,5 +1,7 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
+
 struct Node {
     int pre; // 前一个结点是 node[ pre ]
     int nxt; // 下一个结点是 node[ nxt ]
@@ -44,6 +46,11 @@ void traverse() {
     }
 }
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
+    
     int n, m;
     cin >> n >> m;
     for (int i = 1; i < n; i++) {

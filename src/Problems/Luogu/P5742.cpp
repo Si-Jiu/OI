@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 struct Student {
     int id;
     short score, extraScore;
-    short SumScore() { return score + extraScore; }
+    short SumScore() {
+        return score + extraScore;
+    }
 };
 
 bool IsExcellent(Student a) {

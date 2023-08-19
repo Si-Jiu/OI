@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -24,6 +25,9 @@ bool comp(packing a, packing b) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
 
     packing pencils[3];
     cin >> n >> pencils[0].num >> pencils[0].price >> pencils[1].num >>

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -6,6 +7,10 @@ long long t, x;
 bool flag;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> t;
     for (long long i = 0; i < t; i++) {
         cin >> x;

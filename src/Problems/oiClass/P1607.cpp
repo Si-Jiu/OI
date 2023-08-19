@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int length;
     cin >> length;
     double bike = 27 + 23 + length / 3.0, walk = length / 1.2;

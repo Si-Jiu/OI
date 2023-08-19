@@ -1,10 +1,15 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 map<int, vector<int>> friends;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int n, m;
     cin >> n >> m;
     for (int i = 0; i < m; i++) {

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -20,6 +21,10 @@ void bubble_sort(short arr[], short len) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short a[N];
     for (short i = 0; i < 5; i++)
         cin >> a[i];

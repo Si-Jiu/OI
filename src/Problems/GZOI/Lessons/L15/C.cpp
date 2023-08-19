@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -9,6 +10,10 @@ bool check(long long num) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short n, cnt = 0;
     cin >> n;
     for (short i = 0; i < n; i++) {

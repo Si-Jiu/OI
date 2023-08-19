@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -42,6 +43,10 @@ long long sum() {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     long long n = 0, m = 0, cnt = 1;
     while (cin >> n >> m) {
         memset(nodes, 0, sizeof(node) * (100000 + 10));

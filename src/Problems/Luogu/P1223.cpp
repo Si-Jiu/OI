@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -7,7 +8,9 @@ struct people {
     short num;
 };
 
-bool comp(const people &a, const people &b) { return a.time < b.time; }
+bool comp(const people &a, const people &b) {
+    return a.time < b.time;
+}
 
 int main() {
     short n;

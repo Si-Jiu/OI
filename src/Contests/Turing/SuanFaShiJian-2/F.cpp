@@ -1,10 +1,15 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
 int cnt[1000000] = {};
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int n;
     cin >> n;
     int a[n];

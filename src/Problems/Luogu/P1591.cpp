@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -35,6 +36,10 @@ void output(short a[]) {}
 short tmp1[10], tmp2[LEN], tmp3[LEN];
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short t;
     cin >> t;
     for (short i = 0; i < t; i++) {

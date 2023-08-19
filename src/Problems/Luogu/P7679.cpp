@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -17,6 +18,10 @@ void fenjie(unsigned long long n) {
 int r, g;
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> r >> g;
     fenjie(__gcd(r, g));
     sort(cnt.begin(), cnt.end());

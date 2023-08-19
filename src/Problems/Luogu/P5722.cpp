@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 int main() {
     short a[] = {1,    3,    6,    10,   15,   21,   28,   36,   45,   55,

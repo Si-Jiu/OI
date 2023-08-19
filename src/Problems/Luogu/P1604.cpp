@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
-const short LEN = 2000+10;
+const short LEN = 2000 + 10;
 short a[LEN], b[LEN];
 
 void read(short num[]) {
@@ -38,6 +39,10 @@ void print(short num[]) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     short base;
     cin >> base;
     read(a);

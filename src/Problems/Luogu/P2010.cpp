@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define endl '\n'
 
 using namespace std;
 
@@ -23,6 +24,10 @@ bool IsPalindrome(string o) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     string t1, t2;
     cin >> t1 >> t2;
     if (t1 == t2)
