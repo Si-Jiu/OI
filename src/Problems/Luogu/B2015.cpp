@@ -8,10 +8,9 @@ int main() {
     cin.tie(0);
     cout.tie(0);
 
-    int x, a, y, b;
-    cin >> x >> a >> y >> b;
-    double c = abs(x * a - y * b) * 1.0 / abs(a - b);
-    cout << fixed << setprecision(2) << c << endl;
+    double r1, r2;
+    cin >> r1 >> r2;
+    cout << fixed << setprecision(2) << 1 / (1 / r1 + 1 / r2) << endl;
 
     return 0;
 }
