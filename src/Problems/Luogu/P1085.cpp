@@ -4,9 +4,17 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
+    int mostUnhappy = 0, mostUnhappyDay = 0;
+    for (int i = 0; i < 7; i++) {
+        int a, b;
+        cin >> a >> b;
+        if (a + b > 8)
+            if (a + b > mostUnhappy) {
+                mostUnhappy = a + b;
+                mostUnhappyDay = i + 1;
+            }
+    }
+    cout << mostUnhappyDay << endl;
 
     return 0;
 }
