@@ -14,8 +14,11 @@ bool is_prime(int x) {
 int main() {
     long long n;
     cin >> n;
-    for (int i = 2; i <= sqrt(n) + 1; i++) {
-    }
+    for (int i = 2; i <= sqrt(n) + 1; i++)
+        if (n % i == 0 && is_prime(i)) {
+            cout << n / i << endl;
+            break;
+        }
 
     return 0;
 }
