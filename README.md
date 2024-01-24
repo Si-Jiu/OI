@@ -18,5 +18,5 @@ A: Ubuntu 又被我玩坏了:))))
 ## 镜像仓库
 
 [Gitee](https://gitee.com/Si-Jiu49/oi)
-[Github(Pull from Gitee)](https://github.com/Si-Jiu/oi)
-[GitCode(Pull from Gitee)](https://gitcode.net/CN_MuJianLi/oi)
+[Github(Gitee push)](https://github.com/Si-Jiu/oi)
+[GitCode(Pull Gitee)](https://gitcode.net/CN_MuJianLi/oi)
