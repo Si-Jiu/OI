@@ -12,7 +12,7 @@
 [LLVM](https://github.com/llvm/llvm-project)
 [MinGW64](https://github.com/niXman/mingw-builds-binaries)
 
-Q: Why I don't use Ubuntu now?
+Q: 为什么又不用Ubuntu？
 A: Ubuntu 又被我玩坏了:))))
 
 ## 镜像仓库
