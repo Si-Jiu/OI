@@ -2,7 +2,7 @@
 
 ## 介绍
 
-本仓库是肆鸠用来存放编写的信奥题目代码  
+本仓库是肆鸠用来存放编写的信奥题目代码
 同时也提供了一个针对信奥的 VSCode + LLVM 全家桶的稳定环境，可以在去除 src 目录下的文件后套模板使用
 
 ## 环境
@@ -12,7 +12,7 @@
 [LLVM](https://github.com/llvm/llvm-project)
 [MinGW64](https://github.com/niXman/mingw-builds-binaries)
 
-Q: 为什么又不用Ubuntu？
+Q: 为什么又不用 Ubuntu？  
 A: Ubuntu 又被我玩坏了:))))
 
 ## 镜像仓库
