@@ -1,12 +1,11 @@
 {
   "tasks": [
     {
-      "type": "shell",
-      "label": "Build C++",
-      "command": "clang++",
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe 建置使用中檔案",
+      "command": "g++",
       "args": [
         "${file}",
-        "--target=x86_64-w64-windows-gnu",
         "-fdiagnostics-color=always",
         "-g",
         "-Wall",
@@ -17,10 +16,12 @@
       "options": {
         "cwd": "${fileDirname}"
       },
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "detail": "偵錯工具產生的工作。"
     }
   ],
   "version": "2.0.0"
