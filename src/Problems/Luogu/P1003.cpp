@@ -23,7 +23,7 @@ int main() {
         tmpY = m[j].b + m[j].k;
         if (m[j].a <= x && x <= tmpX && m[j].b <= y && y <= tmpY) {
             cout << j + 1 << endl;
-            break;
+            return 0;
         }
     }
     cout << -1 << endl;

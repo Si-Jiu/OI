@@ -4,13 +4,9 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-
-    double x;
+    long long x;
     cin >> x;
-    cout << (x >= 0 ? floor(x) : ceil(x)) << endl;
+    cout << x << endl;
 
     return 0;
 }
